@@ -1,0 +1,101 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.converter-container {
+    background-color: #1f2937;
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Unit Selection */
+.unit-selection {
+    margin-bottom: 20px;
+}
+
+.unit-selection label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.unit-selection select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #fff;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Button */
+#convert-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#convert-btn:hover {
+    background-color: #45a049;
+}
+
+/* Result Display */
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Validation - Error Border */
+input:invalid {
+    border-color: #ff4c4c;
+}
