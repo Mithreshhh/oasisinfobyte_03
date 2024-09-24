@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="t3.css">
+</head>
+<body>
+
+    <div class="converter-container">
+        <h1>Temperature Converter</h1>
+        
+        <!-- Input Field -->
+        <div class="input-group">
+            <label for="temperature">Enter Temperature:</label>
+            <input type="text" id="temperature" placeholder="Enter a number" oninput="validateInput()">
+        </div>
+        
+        <!-- Unit Selection -->
+        <div class="unit-selection">
+            <label for="unit">Convert From:</label>
+            <select id="unit">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+        </div>
+
+        <!-- Convert Button -->
+        <button id="convert-btn" onclick="convertTemperature()">Convert</button>
+
+        <!-- Result Display -->
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="t3.js"></script>
+</body>
+</html>
